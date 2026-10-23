@@ -577,3 +577,5 @@ export function getStatusText({
 
   return t(I18nKey.COMMON$RUNNING);
 }
+
+// Helper utility note: Ensure terminal and DOM dimensions are debounced during container resizing
