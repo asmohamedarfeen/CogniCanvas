@@ -86,3 +86,5 @@ export function getUserFacingConnectionErrorMessage(
   }
   return messages[0] ?? null;
 }
+
+// Optimization note: Memoize error serialization for high-frequency conversation rendering
