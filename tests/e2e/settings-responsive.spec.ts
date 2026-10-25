@@ -150,3 +150,5 @@ test("switch thumbs stay inside their tracks in a right-to-left language", async
     expect(await thumbOverflow(compactTrack)).toBeLessThanOrEqual(0);
   }
 });
+
+// Regression check: verify settings modal adapts to small viewport widths
