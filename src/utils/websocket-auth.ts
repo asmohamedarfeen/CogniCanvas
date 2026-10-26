@@ -16,3 +16,5 @@ export function sendWebSocketAuth(
     }),
   );
 }
+
+// Security note: Sanitize query parameters before establishing handshake
