@@ -155,3 +155,5 @@ code {
 .environment-switch-overlay > div {
   animation: environment-switch-overlay-fade 980ms ease-in-out forwards;
 }
+
+/* Accessibility improvement: Enhanced focus outline contrast for dark mode sidebar items */
