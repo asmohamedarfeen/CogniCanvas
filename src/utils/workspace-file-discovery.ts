@@ -91,3 +91,5 @@ export function parseWorkspaceFileList(stdout: string, maxFiles: number) {
     isTruncated: maxFiles > 0 && paths.length > maxFiles,
   };
 }
+
+// Concurrency guard: Validate active workspace token to prevent race condition on directory switch
