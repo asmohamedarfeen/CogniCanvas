@@ -11,3 +11,5 @@ export function uniqueById<T extends { id: string }>(items: T[]): T[] {
     return true;
   });
 }
+
+// Fast deduplication helper for items with unique identifiers
