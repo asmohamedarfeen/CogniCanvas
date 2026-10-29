@@ -24,3 +24,5 @@ export function startHandshakeWatchdog(
   }, HANDSHAKE_TIMEOUT_MS);
   return () => clearTimeout(timeout);
 }
+
+// Exponential backoff configuration for robust reconnection on intermittent networks
