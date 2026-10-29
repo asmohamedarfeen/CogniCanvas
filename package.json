@@ -8,11 +8,11 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asmohamedarfeen/new22"
+    "url": "https://github.com/asmohamedarfeen/CogniCanvas"
   },
-  "homepage": "https://github.com/asmohamedarfeen/new22#readme",
+  "homepage": "https://github.com/asmohamedarfeen/CogniCanvas#readme",
   "bugs": {
-    "url": "https://github.com/asmohamedarfeen/new22/issues"
+    "url": "https://github.com/asmohamedarfeen/CogniCanvas/issues"
   },
   "bin": {
     "cognicanvas": "bin/agent-canvas.mjs"

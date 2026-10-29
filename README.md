@@ -18,10 +18,10 @@
 
   <!-- Animated-style Badges -->
   <p align="center">
-    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Status-Active%20%26%20Up%20to%20Date-emerald?style=for-the-badge&logo=git&logoColor=white" alt="Status"></a>
-    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Release-v1.34.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version"></a>
-    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Runtime-React%2019%20%2B%20TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Tech"></a>
-    <a href="https://github.com/asmohamedarfeen/new22/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License"></a>
+    <a href="https://github.com/asmohamedarfeen/CogniCanvas"><img src="https://img.shields.io/badge/Status-Active%20%26%20Up%20to%20Date-emerald?style=for-the-badge&logo=git&logoColor=white" alt="Status"></a>
+    <a href="https://github.com/asmohamedarfeen/CogniCanvas"><img src="https://img.shields.io/badge/Release-v1.34.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version"></a>
+    <a href="https://github.com/asmohamedarfeen/CogniCanvas"><img src="https://img.shields.io/badge/Runtime-React%2019%20%2B%20TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Tech"></a>
+    <a href="https://github.com/asmohamedarfeen/CogniCanvas/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License"></a>
   </p>
 
   <p align="center">
@@ -147,8 +147,8 @@ Ensure you have the following installed:
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/asmohamedarfeen/new22.git
-cd new22
+git clone https://github.com/asmohamedarfeen/CogniCanvas.git
+cd CogniCanvas
 npm install
 ```
 
