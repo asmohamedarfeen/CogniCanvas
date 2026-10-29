@@ -7,7 +7,7 @@ import {
   useCanvasExtensionsRuntime,
 } from "#/components/features/canvas-extensions/canvas-extensions-runtime";
 
-const APP_TITLE = "OpenHands";
+const APP_TITLE = "CogniCanvas";
 
 export const useAppTitle = () => {
   const appRoute = useMatch("/extensions/:extensionName/*");

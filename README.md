@@ -1,186 +1,154 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="https://assets.openhands.dev/logo-whitebackground.png" alt="OpenHands logo" width="340">
-  <h1 align="center" style="border-bottom: none">Agent Canvas</h1>
-  <p align="center">
-    <strong>The self-hosted developer control center for coding agents and automations.</strong>
+  <h1 align="center" style="font-size: 2.5rem; font-weight: 800; border-bottom: none; margin-bottom: 0.25rem;">CogniCanvas</h1>
+  <p align="center" style="font-size: 1.15rem; font-weight: 500;">
+    <strong>The Unified Visual Workspace & Control Deck for Autonomous AI Coding Agents</strong>
   </p>
   <p align="center">
-    Run OpenHands, Claude Code, Codex, Gemini, Pi, OpenCode, or any ACP-compatible agent across local, remote, and cloud backends.
+    Run, orchestrate, and observe Claude Code, Codex, Gemini, OpenCode, or any ACP-compatible agent across local, remote, and cloud environments.
   </p>
 </div>
+
 <div align="center">
-  <a href="https://github.com/OpenHands/OpenHands/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/OpenHands/OpenHands/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
-  <a href="https://www.npmjs.com/package/@openhands/agent-canvas"><img src="https://img.shields.io/npm/v/%40openhands%2Fagent-canvas?style=for-the-badge&logo=npm" alt="npm version"></a>
-  <a href="https://docs.openhands.dev/openhands/usage/agent-canvas/backends"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Documentation"></a>
-  <a href="https://go.openhands.dev/slack"><img src="https://img.shields.io/badge/Slack-Join%20the%20community-611f69?logo=slack&logoColor=white&style=for-the-badge" alt="Join us on Slack"></a>
+  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Version-1.34.0-success.svg?style=for-the-badge" alt="Version"></a>
+  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Node-%3E%3D24-brightgreen.svg?style=for-the-badge" alt="Node"></a>
+  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=for-the-badge" alt="TypeScript"></a>
 </div>
+
 <div align="center">
-  <a href="#quickstart">Quickstart</a> |
-  <a href="./docs/README.md">Docs</a> |
-  <a href="./docs/SELF_HOSTING.md">Self-Hosting</a> |
-  <a href="https://docs.openhands.dev/openhands/usage/agent-canvas/acp-agents">ACP Agents</a> |
-  <a href="https://docs.openhands.dev/openhands/usage/agent-canvas/prebuilt-automations">Automations</a> |
-  <a href="https://go.openhands.dev/slack">Slack</a>
+  <a href="#overview">Overview</a> &bull;
+  <a href="#core-capabilities">Capabilities</a> &bull;
+  <a href="#architecture">Architecture</a> &bull;
+  <a href="#getting-started">Getting Started</a> &bull;
+  <a href="#configuration">Configuration</a> &bull;
+  <a href="#license">License</a>
 </div>
-<p align="center">
-  <img src="https://assets.openhands.dev/screenshot/automation-preview.png" alt="Agent Canvas automation preview" width="100%">
-</p>
-<hr>
 
-OpenHands Agent Canvas turns your coding agents into a self-hosted, always-on engineering team. It's a developer control center for starting conversations and automating everyday tasks — like generating reports that publish to Slack or automatically decomposing GitHub issues into tasks.
+---
 
-It runs locally on your machine by default, but can connect to multiple “agent backends”, e.g. running agents in Docker containers, on VMs, or within your company infrastructure. You can optionally choose to run agents on OpenHands Cloud or OpenHands Enterprise infrastructure.
+## Overview
 
-Agent Canvas runs the open source OpenHands agent out-of-the-box, but can use third-party agents such as Claude Code, Codex, Gemini CLI, Pi, and OpenCode.
+**CogniCanvas** is an open, full-stack visual development environment and control center designed for autonomous software engineering agents. Rather than interacting with AI agents purely through command-line interfaces or raw chat boxes, CogniCanvas unites the full developer toolkit into a unified cockpit:
 
-|                                                                                                                      |                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [**Self-host your way**](https://docs.openhands.dev/openhands/usage/agent-canvas/backend-setup/vm)                   | Run agents locally, in Docker, on VMs, or anywhere you can run an agent server backend                                                   |
-| [**Switch between different backends**](https://docs.openhands.dev/openhands/usage/agent-canvas/backends)            | Switch between local, remote, and cloud agents without losing focus                                                                      |
-| [**Create automations**](https://docs.openhands.dev/openhands/usage/agent-canvas/prebuilt-automations)               | Create automations and workflows that integrate with Slack, GitHub, Linear, and more. Run on a schedule or in response to webhook events |
-| [**Integrate with the tools you use**](https://docs.openhands.dev/openhands/usage/agent-canvas/prebuilt-automations) | Connect your automations with third-party services like Slack, GitHub, Notion, and more to automate workflows                            |
-| [**Bring your own model**](https://docs.openhands.dev/openhands/usage/settings/llm-settings#llm-profiles)            | Use with any LLM                                                                                                                         |
-| [**Use with any agent**](https://docs.openhands.dev/openhands/usage/agent-canvas/acp-agents)                         | Use with OpenHands, Claude Code, Codex, Gemini, Pi, OpenCode, or any agent with Agent-Client Protocol (ACP).                             |
+- **Monaco Code Editor & Diff Viewer**: Direct multi-file browsing, syntax highlighting, and live changes.
+- **Embedded Terminal Emulator**: Interactive shell execution, real-time log streaming, and process controls.
+- **In-App Browser & DOM Inspector**: Live webpage previews, element inspection, and screenshot capture for web-driven agent workflows.
+- **Conversation & Task Planner**: Structured step-by-step task breakdown, thought tracking, and conversation branching.
+- **Multi-Backend Orchestration**: Connect simultaneously to local, containerized, and cloud agent runtime servers.
 
-If you have questions or feedback, please open a GitHub issue or join the [#proj-agent-canvas channel in Slack](https://openhands.dev/joinslack).
+---
 
-## Quickstart
+## Core Capabilities
 
-You can install OpenHands to run agents on any machine: on your laptop, on a dedicated computer like a Mac Mini,
-or on a server in the cloud.
+### 1. Multi-Surface Developer Cockpit
+CogniCanvas splits the developer interface into specialized, coordinated surfaces:
+- **Left Panel (Conversation & Stream)**: Displays agent actions, human feedback loops, tool invocations, code explanations, and collapsible execution thought traces.
+- **Right Panel (Interactive Workspace Tabs)**:
+  - **Files**: Interactive file tree, live file editing, and file creation.
+  - **Terminal**: Real-time terminal with ANSI color support, process signaling, and split view.
+  - **Browser**: Integrated browser rendering live web apps under test with full screenshot capability.
+  - **Planner / Tasks**: Hierarchical decomposition of complex multi-stage tasks.
 
-The most powerful way to run OpenHands is on a server in the cloud. This allows your agents to continue running
-even when your laptop is shut, and makes it easier to trigger your agents through third-party services
-like Slack, GitHub, and Datadog. See [SELF_HOSTING.md](docs/SELF_HOSTING.md) for details, especially with respect to security hardening.
+### 2. Multi-Model & Agent Compatibility
+Compatible with industry-standard agent protocols and models:
+- **Agent Client Protocol (ACP)**: Connect to any ACP-compliant agent backend out-of-the-box.
+- **Supported Model Providers**: Claude (Anthropic), OpenAI Codex / GPT-4o, Google Gemini, DeepSeek, and locally hosted LLMs via Ollama / vLLM.
+- **Dynamic Profile Switching**: Switch models, temperature settings, and agent capabilities per conversation without restarting.
 
-Notably, you can run the backend in _multiple different environments_, and switch between
-them from the same Agent Canvas frontend. E.g. you can share an Agent Server with your team for agents doing
-code review and dependency updates, then have your personal agents running on your laptop.
+### 3. Native Model Context Protocol (MCP) & Skills
+- Seamlessly configure, toggle, and manage MCP servers (GitHub, Slack, PostgreSQL, memory vaults, custom APIs).
+- Custom prompt templates and extensible automation skills that empower agents to inspect codebases, execute test suites, and draft pull requests.
 
-### Option 1: Without a Sandbox
+### 4. Cross-Platform Runtime
+- **Web Application**: Fast, responsive React 19 + Tailwind CSS single-page app running in modern browsers.
+- **Desktop Application**: Packaged via Electron with native file system access and system tray support for macOS, Linux, and Windows.
+- **Docker & Container Ready**: Optimized multi-stage Docker builds and Helm charts for self-hosted team deployments.
 
-> [!WARNING]
-> This runs the agent-server directly on the machine you're installing on — the agent will have full access to your filesystem!
+---
 
-**Prerequisites**: [Node.js](https://nodejs.org/) 24 or later, `uv`
+## Architecture
 
-```sh
-npm install -g @openhands/agent-canvas
-agent-canvas
+CogniCanvas follows a modular architecture separating presentation, state management, and agent transport:
+
 ```
-
-The `agent-canvas` command starts the full local stack by default. You can also split it when you want to run pieces separately:
-
-```sh
-agent-canvas --frontend-only  # static frontend + ingress only
-agent-canvas --backend-only   # agent server + automation backend + ingress only
-```
-
-### Option 2: With a Docker Sandbox
-
-**Prerequisites**:
-
-- Docker: Docker Desktop on macOS/Windows, or Docker Engine/Docker Desktop on Linux.
-- A host directory for `PROJECTS_PATH` containing the project folders you want the agent to access. Create it before starting the container.
-
-**macOS / Linux:**
-
-```sh
-export PROJECTS_PATH="$HOME/projects"  # directory containing your project folders
-mkdir -p "$PROJECTS_PATH" "$HOME/.openhands"
-
-docker run -it --rm \
-  -p 127.0.0.1:8000:8000 \
-  -e AGENT_CANVAS_ALLOW_LAN_SESSION_KEY=true \
-  -v "$HOME/.openhands:/home/openhands/.openhands" \
-  -v "${PROJECTS_PATH}:/projects" \
-  ghcr.io/openhands/agent-canvas:1.34.0 # x-release-please-version
-```
-
-**Windows (PowerShell / Windows Terminal):** See [README.windows.md](./README.windows.md) for the equivalent commands.
-
-The agent will be able to access any project under `PROJECTS_PATH`.
-
-### Option 3: With Multiple Docker Sandboxes
-
-Run each new conversation in its own Docker container, with its own Agent Server and tools. This is useful for running several agents concurrently. Canvas and the outer Agent Server run on your host and route conversation requests to the containers.
-
-**Prerequisites**: Node.js 24 or later, `uv`, and a running Docker Desktop (macOS) or Docker Engine/Desktop (Linux). The user starting Canvas must be able to run `docker` commands.
-
-**macOS / Linux:**
-
-```sh
-npm install -g @openhands/agent-canvas
-OH_CONVERSATION_RUNTIME=docker agent-canvas
-```
-
-Open [http://localhost:8000](http://localhost:8000) and start a new conversation. Existing local conversations are not converted. Each container mounts its conversation's workspace and persisted state, so workspace files and conversation history survive container replacement. Conversations using the same host workspace still share those files; choose separate directories or worktrees to avoid conflicting edits.
-
-This setting isolates conversation execution; it does not move the entire Canvas or automation service into a sandbox. For Windows, see [README.windows.md](./README.windows.md#option-3-with-multiple-docker-sandboxes-wsl-2).
-
-### Option 4: From Source
-
-> [!WARNING]
-> This runs the agent-server directly on the machine you're installing on — the agent will have full access to your filesystem!
-
-**Prerequisites**: [Node.js](https://nodejs.org/) 24 or later, npm 11.12.1 (the repository pin), `uv` (for running the agent server via `uvx`)
-
-Check `npm --version` before resolving dependencies. The seven-day release-age
-filter (`npm install --min-release-age=7`) requires npm >=11.10; older versions
-do not enforce it. Use `npm ci` to replay the committed lockfile. This npm
-requirement is for contributor dependency resolution, not for installing the
-published Canvas package.
-
-```sh
-git clone https://github.com/OpenHands/OpenHands.git
-cd OpenHands
-npm ci
-npm run dev
+src/
+├── api/          # Agent Server REST & WebSocket transport layer
+├── assets/       # Branding, icons, and static graphics
+├── components/   # Modular UI surfaces (browser, conversation, files, terminal, settings)
+├── context/      # React contexts (theme, layout, telemetry)
+├── hooks/        # Reactive hooks for agent state, queries, and shortcuts
+├── i18n/         # Internationalization dictionary (English, Spanish, German, Japanese, etc.)
+├── routes/       # React Router layout and view configurations
+├── services/     # Business logic, audio, child conversation lifecycle
+├── stores/       # Global state stores (Zustand / TanStack Query)
+├── types/        # TypeScript contracts for agent events, tools, and configurations
+└── utils/        # Path resolution, websocket handshake, formatting helpers
 ```
 
 ---
 
-Access the UI at [http://localhost:8000](http://localhost:8000) for the npm/source launchers, or [http://localhost:8000/canvas](http://localhost:8000/canvas) for the Docker image. You can add additional backends directly from the UI.
+## Getting Started
 
-Local (`npx` / `npm run dev`) listeners bind **loopback only** (`127.0.0.1`) so the auto-injected session key is not reachable from other machines on the network. To listen on all interfaces, pass `--host 0.0.0.0` (or set `OH_BIND_HOST`); the session key is then **not** injected and the UI uses the same API-key entry screen as `--public`.
+### Prerequisites
+- **Node.js**: `>= 24.0.0`
+- **npm**: `>= 11.0.0`
 
-Docker listens on all container interfaces so port publishing works, but does not inject its session key into HTML by default. The quickstart above explicitly enables injection while publishing the host port on `127.0.0.1` only. If you publish Docker on a LAN or public interface, omit `AGENT_CANVAS_ALLOW_LAN_SESSION_KEY` and enter the API key in the UI. Set `LOCAL_BACKEND_API_KEY` to a strong value, or retrieve the generated value with `docker exec <container> sh -c 'cat "$STATE_DIR/api-key.txt"'`. For internet-facing installs, follow [self-hosting](./docs/SELF_HOSTING.md).
+### Installation
 
-# Architecture
+Clone the repository and install dependencies:
 
-Agent Canvas is powered by the [OpenHands Agent Server](https://github.com/OpenHands/software-agent-sdk/tree/main/openhands-agent-server/openhands/agent_server), a REST API for running multiple agents on a single machine. Each Agent Server runs on a single host/port; the Agent Canvas can connect to multiple Agent Servers and easily flip between them.
+```bash
+git clone https://github.com/asmohamedarfeen/new22.git
+cd new22
+npm install
+```
 
-You can run an Agent Server anywhere:
+### Running the Development Server
 
-- Directly on your laptop (be careful!)
-- On a dedicated machine like a Mac Mini
-- On a virtual machine in the cloud
-- Inside OpenHands Cloud (our commercial offering)
+Start the local Vite development server:
 
-The Agent Server is often paired with an [Automation Server](https://github.com/OpenHands/automation), which lets you set up agents that run on a schedule or in response to events.
+```bash
+npm run dev
+```
 
-<img width="1456" height="1258" alt="image" src="https://github.com/user-attachments/assets/cb6de6f5-ac30-4d04-a76a-b5c259f0c163" />
+Open [http://localhost:3000](http://localhost:3000) (or the displayed port) in your browser.
 
-### Repository boundaries
+### Building for Production
 
-Agent Canvas is part of a multi-repository OpenHands system. Changes should go to the repository that owns the behavior:
+Compile the web application:
 
-| Repository                                                                        | Responsibility                                                                                            |
-| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [`OpenHands/OpenHands`](https://github.com/OpenHands/OpenHands)                   | Agent Canvas frontend, user-facing control center, backend selection, and local-stack orchestration.      |
-| [`OpenHands/software-agent-sdk`](https://github.com/OpenHands/software-agent-sdk) | Python SDK, Agent Server, agents, tools, conversations, workspaces, events, and the canonical server API. |
-| [`OpenHands/typescript-client`](https://github.com/OpenHands/typescript-client)   | Browser-compatible TypeScript client for the Agent Server API.                                            |
-| [`OpenHands/automation`](https://github.com/OpenHands/automation)                 | Automation definitions, scheduling, webhooks, run history, and dispatching.                               |
+```bash
+npm run build:app
+```
 
-The Agent Server API is implemented by the SDK and consumed through the TypeScript client by Agent Canvas. The automation service decides when work runs and dispatches conversations to the Agent Server/SDK, which decides what runs. See [`AGENTS.md`](./AGENTS.md) for contributor-specific boundaries and the required custom code-review guide.
+### Building the Desktop Application (Electron)
 
-## More documentation
+```bash
+npm run build:desktop
+```
 
-- [Documentation index](./docs/README.md)
-- [Architecture overview](./docs/architecture.md)
-- [Development guide](./docs/DEVELOPMENT.md), including [embedding Canvas components in a host app](./docs/DEVELOPMENT.md#css-isolation-and-host-app-customization) (load `@openhands/agent-canvas/styles.css` once next to the component imports)
-- [Self-hosting guide](./docs/SELF_HOSTING.md)
+---
 
-<!-- Verified deployment steps and live environment prerequisites -->
+## Configuration
+
+CogniCanvas reads configuration from environment variables. Copy the sample environment file:
+
+```bash
+cp .env.sample .env
+```
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `VITE_AGENT_SERVER_URL` | Base URL of the Agent Server backend | `http://localhost:8000` |
+| `VITE_APP_MODE` | Runtime mode (`web` or `desktop`) | `web` |
+| `VITE_ENABLE_TELEMETRY` | Enable anonymized crash/error diagnostics | `false` |
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+Copyright (c) 2026 **Mohamed Arfeen** &lt;asmohamed.arfeen@gmail.com&gt;

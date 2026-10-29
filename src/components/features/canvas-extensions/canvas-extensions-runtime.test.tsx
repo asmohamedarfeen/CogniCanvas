@@ -149,13 +149,13 @@ describe("CanvasExtensionsRuntimeProvider", () => {
   });
 
   it.each([
-    ["/extensions/demo-extension/dashboard", "Dashboard | OpenHands"],
-    ["/extensions/demo-extension/dashboard/nested", "Dashboard | OpenHands"],
-    ["/extensions/demo-extension/dashboard-other", "OpenHands"],
-    ["/extensions/demo-extension/DASHBOARD", "OpenHands"],
-    ["/extensions/demo-extension/%64ashboard", "Dashboard | OpenHands"],
-    ["/extensions/other/dashboard", "OpenHands"],
-    ["/", "OpenHands"],
+    ["/extensions/demo-extension/dashboard", "Dashboard | CogniCanvas"],
+    ["/extensions/demo-extension/dashboard/nested", "Dashboard | CogniCanvas"],
+    ["/extensions/demo-extension/dashboard-other", "CogniCanvas"],
+    ["/extensions/demo-extension/DASHBOARD", "CogniCanvas"],
+    ["/extensions/demo-extension/%64ashboard", "Dashboard | CogniCanvas"],
+    ["/extensions/other/dashboard", "CogniCanvas"],
+    ["/", "CogniCanvas"],
   ])("sets the browser title for %s", async (path, expectedTitle) => {
     renderRuntime(
       async () => ({
@@ -172,7 +172,7 @@ describe("CanvasExtensionsRuntimeProvider", () => {
       expect(screen.getByTestId("page-count")).toHaveTextContent("1"),
     );
     expect(screen.getByTestId("app-title").textContent).toBe(expectedTitle);
-    if (expectedTitle === "Dashboard | OpenHands") {
+    if (expectedTitle === "Dashboard | CogniCanvas") {
       expect(await screen.findByText("Dashboard mounted")).toBeInTheDocument();
     } else {
       expect(screen.queryByText("Dashboard mounted")).not.toBeInTheDocument();

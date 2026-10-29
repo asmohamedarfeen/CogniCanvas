@@ -323,9 +323,9 @@ function getDirSizeBytes(dir) {
 
 /** @type {import('electron-builder').Configuration} */
 const config = {
-  appId: "dev.openhands.agent-canvas",
-  productName: "OpenHands Agent Canvas",
-  copyright: "Copyright © 2025 OpenHands contributors",
+  appId: "com.cognicanvas.desktop",
+  productName: "CogniCanvas",
+  copyright: "Copyright © 2026 Mohamed Arfeen",
 
   // Stamp the packaged app with the released version (see rootPackageJson
   // note above).

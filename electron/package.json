@@ -1,7 +1,7 @@
 {
-  "name": "agent-canvas",
-  "productName": "OpenHands Agent Canvas",
-  "version": "1.0.0",
+  "name": "cognicanvas",
+  "productName": "CogniCanvas",
+  "version": "1.34.0",
   "private": true,
   "main": "main.mjs"
 }
