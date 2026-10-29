@@ -2,8 +2,6 @@
 
 <div align="center">
 
-  <img src="./docs/assets/cognicanvas-logo.svg" width="96" height="64" alt="CogniCanvas Logo" />
-
   # ⚡ CogniCanvas
 
   ### **The Next-Gen Visual Cockpit for Autonomous AI Coding Agents**
@@ -104,10 +102,10 @@ Decompose complex software engineering requests into manageable steps. Pause, re
 
 <br />
 
-### 🎨 5. Redesigned Modern UI & Brand Mark
-- **Neural Prism Brand Mark**: Custom vector emblem engineered with radiant cyan and electric violet isometric facets.
-- **Deep Obsidian Surfaces**: Modern high-contrast dark theme (`#070a13` / `#0d1424`) with radiant accents and border glows.
-- **Streamlined Navigation Rail**: Persistent branding with animated studio indicators and fluid collapsible layout.
+### 🎨 5. Redesigned Minimalist UI & Flight Deck
+- **Logo-Free Typographic Architecture**: Stripped away legacy logo graphics in favor of a clean, distraction-free typographic header with a pulsing live agent status beacon.
+- **Deep Obsidian Surfaces**: High-contrast modern dark palette (`#070a13` / `#0d1424`) with glowing cyan active borders and refined shadows.
+- **Elevated Tab & Rail Navigation**: Glassmorphic active tab indicators, glowing state pills, and smooth responsive transitions.
 
 ---
 

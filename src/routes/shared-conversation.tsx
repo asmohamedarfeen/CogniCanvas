@@ -11,7 +11,6 @@ import { shouldRenderEvent } from "#/components/conversation-events/chat/event-c
 import { LoadingSpinner } from "#/components/shared/loading-spinner";
 import { handleEventForUI } from "#/utils/handle-event-for-ui";
 import { OpenHandsEvent } from "#/types/agent-server/core";
-import OpenHandsLogo from "#/assets/branding/openhands-logo.svg?react";
 import { useInfiniteScroll } from "#/hooks/use-infinite-scroll";
 
 /**
@@ -96,18 +95,18 @@ export default function SharedConversation() {
         <div className="max-w-4xl mx-auto flex items-start gap-4">
           <Link
             to="/conversations"
-            className="flex-shrink-0 flex items-center gap-2.5"
+            className="flex-shrink-0 flex items-center gap-2"
             aria-label={t(I18nKey.BRANDING$OPENHANDS_LOGO)}
           >
-            <div className="p-1 rounded-lg bg-gradient-to-br from-cyan-500/10 via-indigo-500/10 to-transparent border border-cyan-500/20">
-              <OpenHandsLogo
-                width={40}
-                height={26}
-                className="text-contrast"
-              />
-            </div>
-            <span className="text-base font-bold tracking-tight bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
+            <span className="relative flex h-2.5 w-2.5 items-center justify-center">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400" />
+            </span>
+            <span className="text-base font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-cyan-400 bg-clip-text text-transparent">
               CogniCanvas
+            </span>
+            <span className="px-1.5 py-0.5 text-[9px] font-bold text-cyan-300 bg-cyan-950/70 border border-cyan-700/50 rounded-md tracking-wider uppercase">
+              Shared
             </span>
           </Link>
           <div className="flex-1 min-w-0">

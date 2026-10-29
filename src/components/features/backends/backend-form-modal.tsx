@@ -10,7 +10,6 @@ import {
   Monitor,
 } from "lucide-react";
 import { ServerClient } from "@openhands/typescript-client/clients";
-import OpenHandsLogoWhite from "#/assets/branding/openhands-logo-white.svg?react";
 import DigitalOceanLogo from "#/assets/branding/digitalocean-logo.svg?react";
 import { getMarsBridge } from "#/api/mars/mars-tunnel-backend";
 import { DigitalOceanConnectPanel } from "./managed-agents/digitalocean-connect-panel";
@@ -997,13 +996,10 @@ function CloudLoginColumn({
   return (
     <div className="flex w-full min-w-0 flex-col items-center gap-3">
       {showBranding ? (
-        <div className="flex flex-col items-center gap-1">
-          <OpenHandsLogoWhite
-            width={56}
-            height={56}
-            className="text-contrast [&_path:not([fill=transparent])]:fill-current"
-            aria-hidden
-          />
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 text-cyan-300 font-extrabold text-lg shadow-[0_0_20px_rgba(6,182,212,0.25)]">
+            CC
+          </div>
 
           <h4
             className={modalTitleLgMediumClassName}
@@ -1493,12 +1489,12 @@ function AddBackendChooser({
           title={t(I18nKey.BACKEND$CLOUD_TITLE)}
           description={t(I18nKey.BACKEND$CLOUD_OPTION_DESCRIPTION)}
           icon={
-            <OpenHandsLogoWhite
-              width={32}
-              height={32}
+            <div
               data-testid="add-backend-option-cloud-logo"
-              className="text-contrast [&_path:not([fill=transparent])]:fill-current"
-            />
+              className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 text-cyan-300 font-bold text-xs"
+            >
+              CC
+            </div>
           }
           onSelect={setSelectedOption}
           panelId={panelId}

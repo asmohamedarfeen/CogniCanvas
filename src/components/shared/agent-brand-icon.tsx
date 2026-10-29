@@ -1,4 +1,3 @@
-import OpenHandsLogo from "#/assets/branding/openhands-logo.svg?react";
 import TerminalIcon from "#/icons/terminal.svg?react";
 import {
   CLAUDE_CODE_MARK_PATH,
@@ -43,22 +42,18 @@ export function AgentBrandIcon({
   "data-testid": testId,
 }: AgentBrandIconProps) {
   if (kind === "openhands") {
-    // The shipped SVG draws the wordmark with ``fill="white"`` paths but
-    // leaves the two hand shapes as ``fill="transparent"`` (negative space).
-    // Recolor only the non-transparent paths to ``currentColor`` so the logo
-    // inherits the chip's text color *without* filling in the hands — a
-    // blanket ``[&_path]`` selector turns the whole mark into a solid blob.
     return (
-      <OpenHandsLogo
-        width={Math.round(size * OPENHANDS_LOGO_ASPECT_RATIO)}
-        height={size}
+      <span
+        data-testid={testId ?? "agent-brand-icon-openhands"}
         className={cn(
-          "shrink-0 [&_path:not([fill=transparent])]:fill-current",
+          "inline-flex items-center justify-center font-black tracking-tight text-[10px] text-cyan-300 bg-cyan-950/60 border border-cyan-700/50 rounded shrink-0 px-1 select-none",
           className,
         )}
-        data-testid={testId ?? "agent-brand-icon-openhands"}
+        style={{ height: size, minWidth: size }}
         aria-hidden
-      />
+      >
+        CC
+      </span>
     );
   }
   if (kind === "claude-code") {

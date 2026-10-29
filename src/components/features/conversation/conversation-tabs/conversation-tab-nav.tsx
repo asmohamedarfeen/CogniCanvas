@@ -71,12 +71,13 @@ export function ConversationTabNav({
       } as const);
 
   const buttonClassName = cn(
-    "flex items-center rounded-md cursor-pointer",
+    "flex items-center rounded-md cursor-pointer transition-all duration-150",
     "pl-1.5 pr-2 py-1 lg:py-1.5",
     "text-muted bg-transparent",
-    isActive && "bg-interactive-active text-contrast",
+    isActive &&
+      "bg-cyan-500/15 text-cyan-200 border border-cyan-500/30 shadow-[0_0_10px_rgba(6,182,212,0.15)]",
     isActive
-      ? "hover:text-contrast hover:bg-interactive-hover"
+      ? "hover:text-cyan-100 hover:bg-cyan-500/20"
       : "hover:text-contrast hover:bg-contrast/5",
     isActive ? "focus-within:text-contrast" : "focus-within:text-muted",
     className,

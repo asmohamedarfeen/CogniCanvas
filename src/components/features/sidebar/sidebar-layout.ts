@@ -20,8 +20,9 @@ export function sidebarHeaderRowClassName(collapsed: boolean): string {
 }
 
 export const SIDEBAR_ROW_INTERACTIVE_CLASS = {
-  active: "bg-tertiary text-contrast font-normal",
-  idle: "text-muted hover:text-contrast hover:bg-surface-raised",
+  active:
+    "bg-cyan-500/15 text-cyan-200 font-medium border-l-2 border-cyan-400 pl-2 shadow-[inset_0_0_12px_rgba(6,182,212,0.08)]",
+  idle: "text-muted hover:text-contrast hover:bg-surface-raised transition-colors duration-150",
 } as const;
 
 export function sidebarNavListClassName(collapsed: boolean): string {
@@ -50,8 +51,9 @@ export function sidebarNavRowClassName(options?: {
 export function sidebarCollapsedIconBgClassName(active: boolean): string {
   return cn(
     "pointer-events-none absolute inset-0 z-0 rounded-md",
-    navInteractiveTransitionClassName,
-    active ? "bg-tertiary" : "bg-transparent group-hover:bg-surface-raised",
+    active
+      ? "bg-cyan-500/20 border border-cyan-500/30 shadow-[0_0_8px_rgba(6,182,212,0.2)]"
+      : "bg-transparent group-hover:bg-surface-raised transition-colors",
   );
 }
 
