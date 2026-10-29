@@ -96,14 +96,19 @@ export default function SharedConversation() {
         <div className="max-w-4xl mx-auto flex items-start gap-4">
           <Link
             to="/conversations"
-            className="flex-shrink-0"
+            className="flex-shrink-0 flex items-center gap-2.5"
             aria-label={t(I18nKey.BRANDING$OPENHANDS_LOGO)}
           >
-            <OpenHandsLogo
-              width={46}
-              height={30}
-              className="text-contrast [&_path:not([fill=transparent])]:fill-current"
-            />
+            <div className="p-1 rounded-lg bg-gradient-to-br from-cyan-500/10 via-indigo-500/10 to-transparent border border-cyan-500/20">
+              <OpenHandsLogo
+                width={40}
+                height={26}
+                className="text-contrast"
+              />
+            </div>
+            <span className="text-base font-bold tracking-tight bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
+              CogniCanvas
+            </span>
           </Link>
           <div className="flex-1 min-w-0">
             <h1 className="text-xl font-medium mb-2">

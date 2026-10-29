@@ -1,0 +1,41 @@
+<svg width="150" height="100" viewBox="0 0 150 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cogni-grad-top" x1="45" y1="20" x2="105" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cogni-grad-left" x1="40" y1="50" x2="75" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cogni-grad-right" x1="110" y1="50" x2="75" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cogni-glow" x1="75" y1="35" x2="75" y2="65" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <filter id="soft-glow" x="20" y="5" width="110" height="90" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="75" cy="50" r="32" fill="#06b6d4" opacity="0.15" filter="url(#soft-glow)"/>
+
+  <!-- Top Prism Facet -->
+  <path d="M75 16L108 33L75 50L42 33L75 16Z" fill="url(#cogni-grad-top)" stroke="#e0f2fe" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Left Prism Facet -->
+  <path d="M42 37L73 54V88L42 71V37Z" fill="url(#cogni-grad-left)" stroke="#c7d2fe" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Right Prism Facet -->
+  <path d="M77 54L108 37V71L77 88V54Z" fill="url(#cogni-grad-right)" stroke="#ddd6fe" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Core Neural Spark / Dynamic Canvas Center -->
+  <circle cx="75" cy="52" r="5" fill="url(#cogni-glow)"/>
+  <path d="M75 42V62M65 52H85" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="75" cy="52" r="9" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.75"/>
+</svg>
