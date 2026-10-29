@@ -1,103 +1,141 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1 align="center" style="font-size: 2.5rem; font-weight: 800; border-bottom: none; margin-bottom: 0.25rem;">CogniCanvas</h1>
-  <p align="center" style="font-size: 1.15rem; font-weight: 500;">
-    <strong>The Unified Visual Workspace & Control Deck for Autonomous AI Coding Agents</strong>
-  </p>
+
+  # ⚡ CogniCanvas
+
+  ### **The Next-Gen Visual Cockpit for Autonomous AI Coding Agents**
+
   <p align="center">
-    Run, orchestrate, and observe Claude Code, Codex, Gemini, OpenCode, or any ACP-compatible agent across local, remote, and cloud environments.
+    <strong>Turn independent AI agents into an orchestrated, observable engineering powerhouse.</strong>
   </p>
-</div>
 
-<div align="center">
-  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Version-1.34.0-success.svg?style=for-the-badge" alt="Version"></a>
-  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Node-%3E%3D24-brightgreen.svg?style=for-the-badge" alt="Node"></a>
-  <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=for-the-badge" alt="TypeScript"></a>
-</div>
+  <p align="center">
+    Orchestrate Claude Code, OpenAI Codex, Google Gemini, OpenCode, or any ACP-compliant agent in a live visual cockpit with an embedded Monaco editor, interactive terminal, real-time web inspector, and automated task planner.
+  </p>
 
-<div align="center">
-  <a href="#overview">Overview</a> &bull;
-  <a href="#core-capabilities">Capabilities</a> &bull;
-  <a href="#architecture">Architecture</a> &bull;
-  <a href="#getting-started">Getting Started</a> &bull;
-  <a href="#configuration">Configuration</a> &bull;
-  <a href="#license">License</a>
+  <!-- Animated-style Badges -->
+  <p align="center">
+    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Status-Active%20%26%20Up%20to%20Date-emerald?style=for-the-badge&logo=git&logoColor=white" alt="Status"></a>
+    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Release-v1.34.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version"></a>
+    <a href="https://github.com/asmohamedarfeen/new22"><img src="https://img.shields.io/badge/Runtime-React%2019%20%2B%20TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Tech"></a>
+    <a href="https://github.com/asmohamedarfeen/new22/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License"></a>
+  </p>
+
+  <p align="center">
+    <a href="#-quick-tour">✨ Quick Tour</a> •
+    <a href="#-core-features">🚀 Features</a> •
+    <a href="#-workflow-comparison">📊 Why CogniCanvas?</a> •
+    <a href="#-getting-started">⚡ Quickstart</a> •
+    <a href="#-architecture">🏗️ Architecture</a> •
+    <a href="#-license">📜 License</a>
+  </p>
+
+  <br />
+
+  <!-- Hero Workspace Screenshot -->
+  <img src="./docs/assets/cognicanvas-workspace-preview.png" alt="CogniCanvas Full Workspace Cockpit" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);" />
+
 </div>
 
 ---
 
-## Overview
+## 🌟 Why CogniCanvas?
 
-**CogniCanvas** is an open, full-stack visual development environment and control center designed for autonomous software engineering agents. Rather than interacting with AI agents purely through command-line interfaces or raw chat boxes, CogniCanvas unites the full developer toolkit into a unified cockpit:
+Terminal-only coding agents are powerful, but developers lose context staring at text output while files are changed blindly in the dark. 
 
-- **Monaco Code Editor & Diff Viewer**: Direct multi-file browsing, syntax highlighting, and live changes.
-- **Embedded Terminal Emulator**: Interactive shell execution, real-time log streaming, and process controls.
-- **In-App Browser & DOM Inspector**: Live webpage previews, element inspection, and screenshot capture for web-driven agent workflows.
-- **Conversation & Task Planner**: Structured step-by-step task breakdown, thought tracking, and conversation branching.
-- **Multi-Backend Orchestration**: Connect simultaneously to local, containerized, and cloud agent runtime servers.
-
----
-
-## Core Capabilities
-
-### 1. Multi-Surface Developer Cockpit
-CogniCanvas splits the developer interface into specialized, coordinated surfaces:
-- **Left Panel (Conversation & Stream)**: Displays agent actions, human feedback loops, tool invocations, code explanations, and collapsible execution thought traces.
-- **Right Panel (Interactive Workspace Tabs)**:
-  - **Files**: Interactive file tree, live file editing, and file creation.
-  - **Terminal**: Real-time terminal with ANSI color support, process signaling, and split view.
-  - **Browser**: Integrated browser rendering live web apps under test with full screenshot capability.
-  - **Planner / Tasks**: Hierarchical decomposition of complex multi-stage tasks.
-
-### 2. Multi-Model & Agent Compatibility
-Compatible with industry-standard agent protocols and models:
-- **Agent Client Protocol (ACP)**: Connect to any ACP-compliant agent backend out-of-the-box.
-- **Supported Model Providers**: Claude (Anthropic), OpenAI Codex / GPT-4o, Google Gemini, DeepSeek, and locally hosted LLMs via Ollama / vLLM.
-- **Dynamic Profile Switching**: Switch models, temperature settings, and agent capabilities per conversation without restarting.
-
-### 3. Native Model Context Protocol (MCP) & Skills
-- Seamlessly configure, toggle, and manage MCP servers (GitHub, Slack, PostgreSQL, memory vaults, custom APIs).
-- Custom prompt templates and extensible automation skills that empower agents to inspect codebases, execute test suites, and draft pull requests.
-
-### 4. Cross-Platform Runtime
-- **Web Application**: Fast, responsive React 19 + Tailwind CSS single-page app running in modern browsers.
-- **Desktop Application**: Packaged via Electron with native file system access and system tray support for macOS, Linux, and Windows.
-- **Docker & Container Ready**: Optimized multi-stage Docker builds and Helm charts for self-hosted team deployments.
-
----
-
-## Architecture
-
-CogniCanvas follows a modular architecture separating presentation, state management, and agent transport:
+**CogniCanvas fixes this.** It acts as an **always-on flight deck** where you can observe, guide, and collaborate with autonomous AI software engineers in real time.
 
 ```
-src/
-├── api/          # Agent Server REST & WebSocket transport layer
-├── assets/       # Branding, icons, and static graphics
-├── components/   # Modular UI surfaces (browser, conversation, files, terminal, settings)
-├── context/      # React contexts (theme, layout, telemetry)
-├── hooks/        # Reactive hooks for agent state, queries, and shortcuts
-├── i18n/         # Internationalization dictionary (English, Spanish, German, Japanese, etc.)
-├── routes/       # React Router layout and view configurations
-├── services/     # Business logic, audio, child conversation lifecycle
-├── stores/       # Global state stores (Zustand / TanStack Query)
-├── types/        # TypeScript contracts for agent events, tools, and configurations
-└── utils/        # Path resolution, websocket handshake, formatting helpers
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                 COGNICANVAS                                  │
+│                                                                              │
+│   ┌─────────────────────┐  ┌──────────────────────────────────────────────┐  │
+│   │  CONVERSATION & AI  │  │            INTERACTIVE WORKSPACE             │  │
+│   │                     │  │                                              │  │
+│   │  • Task Breakdown   │  │  [📂 Files]   [💻 Terminal]   [🌐 Browser]    │  │
+│   │  • Thought Streaming│  │                                              │  │
+│   │  • Branching Forks  │  │  • Real-time Diff & Monaco Code Editor       │  │
+│   │  • Tool Traces      │  │  • Interactive ANSI Shell & PTY Stream       │  │
+│   │  • Multi-Model Hub  │  │  • Headless/Live DOM Inspection & Screen     │  │
+│   └─────────────────────┘  └──────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Getting Started
+## ✨ Quick Tour
+
+### 🖥️ 1. Multi-Surface Visual Cockpit
+Observe agent actions live across dedicated surfaces. The split cockpit gives you complete visibility into files touched, commands executed, and browser actions in real time.
+
+<div align="center">
+  <img src="./docs/assets/cognicanvas-workspace-preview.png" alt="CogniCanvas Full Visual Cockpit" width="95%" style="border-radius: 10px; border: 1px solid #30363d;" />
+</div>
+
+<br />
+
+### 📂 2. Monaco Code Editor & Live File Explorer
+Review full source code changes, jump between project trees with fuzzy matching, and inspect side-by-side diffs before agents commit their work.
+
+<div align="center">
+  <img src="./docs/assets/cognicanvas-files-and-editor.png" alt="CogniCanvas Files & Editor" width="95%" style="border-radius: 10px; border: 1px solid #30363d;" />
+</div>
+
+<br />
+
+### 🧠 3. Dynamic Multi-Model & Backend Orchestration
+Seamlessly switch between AI models (Claude 3.7 / 3.5 Sonnet, GPT-4o, Codex, Gemini Flash/Pro, DeepSeek R1) or connect to local, containerized, or cloud agent runtimes on the fly.
+
+<div align="center">
+  <img src="./docs/assets/cognicanvas-model-orchestration.png" alt="CogniCanvas Model Orchestration" width="95%" style="border-radius: 10px; border: 1px solid #30363d;" />
+</div>
+
+<br />
+
+### ⚡ 4. Autonomous Task Workflows & Planning
+Decompose complex software engineering requests into manageable steps. Pause, resume, fork conversations with "Branch from here", or run automated scheduled routines.
+
+<div align="center">
+  <img src="./docs/assets/cognicanvas-automations-detail.png" alt="CogniCanvas Automations & Workflows" width="95%" style="border-radius: 10px; border: 1px solid #30363d;" />
+</div>
+
+---
+
+## 📊 Workflow Comparison
+
+| Capability | Raw CLI Agents | Standard Chatbots | ⚡ **CogniCanvas** |
+| :--- | :---: | :---: | :---: |
+| **Real-time File Tree & Code Diff** | ❌ None | ❌ Copy-paste only | ✅ **Native Monaco Editor & Diffs** |
+| **Embedded Shell Execution** | ⚠️ Blind console | ❌ None | ✅ **Interactive PTY Terminal** |
+| **Live Browser Preview & DOM Snapshots**| ❌ None | ❌ None | ✅ **Built-in Browser Inspector** |
+| **Branch Conversations From Any Step** | ❌ None | ❌ Linear only | ✅ **Instant Tree Branching** |
+| **Model & Backend Hot-Swapping** | ❌ Restart CLI | ⚠️ Limited | ✅ **Live Profile Switcher** |
+| **Model Context Protocol (MCP) Support** | ⚠️ Complex config | ❌ None | ✅ **One-Click MCP Manager** |
+| **Self-Hosted & Desktop App** | ⚠️ Script-only | ❌ Cloud only | ✅ **Web + Docker + Electron** |
+
+---
+
+## 🚀 Key Features
+
+* 💻 **Interactive Terminal**: Full ANSI color support, process signaling, split-terminal views, and execution telemetry.
+* 🌐 **Live Web Browser Inspector**: Renders web applications created or modified by agents; supports auto-screenshot captures and DOM element picking.
+* 🌿 **Conversation Branching**: Fork from any historical message (`Branch from here`) to explore alternative implementation paths without losing context.
+* 🔌 **Model Context Protocol (MCP)**: Plug in SQLite, GitHub, Slack, filesystem tools, and custom REST API connectors instantly.
+* 🌍 **Global Localization**: Fully translated across 15+ languages including English, Spanish, German, French, Japanese, and Chinese.
+* 🖥️ **Universal Deployment**: Run as a high-speed web application or as a packaged native desktop application via Electron.
+
+---
+
+## ⚡ Getting Started
 
 ### Prerequisites
-- **Node.js**: `>= 24.0.0`
-- **npm**: `>= 11.0.0`
 
-### Installation
+Ensure you have the following installed:
+* **Node.js**: `>= 24.0.0`
+* **npm**: `>= 11.0.0`
 
-Clone the repository and install dependencies:
+### 1. Clone & Install
 
 ```bash
 git clone https://github.com/asmohamedarfeen/new22.git
@@ -105,50 +143,97 @@ cd new22
 npm install
 ```
 
-### Running the Development Server
-
-Start the local Vite development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) (or the displayed port) in your browser.
-
-### Building for Production
-
-Compile the web application:
-
-```bash
-npm run build:app
-```
-
-### Building the Desktop Application (Electron)
-
-```bash
-npm run build:desktop
-```
-
----
-
-## Configuration
-
-CogniCanvas reads configuration from environment variables. Copy the sample environment file:
+### 2. Environment Setup
 
 ```bash
 cp .env.sample .env
 ```
 
-| Variable | Description | Default |
-| :--- | :--- | :--- |
-| `VITE_AGENT_SERVER_URL` | Base URL of the Agent Server backend | `http://localhost:8000` |
-| `VITE_APP_MODE` | Runtime mode (`web` or `desktop`) | `web` |
-| `VITE_ENABLE_TELEMETRY` | Enable anonymized crash/error diagnostics | `false` |
+Customize `.env` with your preferred Agent Server endpoint:
+```env
+VITE_AGENT_SERVER_URL=http://localhost:8000
+VITE_APP_MODE=web
+```
+
+### 3. Launch Development Server
+
+```bash
+npm run dev
+```
+
+Your CogniCanvas cockpit will be live at `http://localhost:3000` (or `http://localhost:5173`).
 
 ---
 
-## License
+## 📦 Build Targets
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+### 🌐 Build Web Application
+```bash
+npm run build:app
+```
 
-Copyright (c) 2026 **Mohamed Arfeen** &lt;asmohamed.arfeen@gmail.com&gt;
+### 🖥️ Build Desktop Application (Electron)
+```bash
+npm run build:desktop
+```
+Creates optimized desktop binaries for macOS, Linux, and Windows in `dist-electron/`.
+
+### 🐳 Run with Docker
+```bash
+docker build -t cognicanvas -f docker/Dockerfile .
+docker run -p 3000:80 cognicanvas
+```
+
+---
+
+## 🏗️ Architecture
+
+```
+cognicanvas/
+├── src/
+│   ├── api/                  # Agent Server REST & WebSocket protocol engine
+│   ├── components/
+│   │   ├── browser/          # In-app browser inspector & screenshot engine
+│   │   ├── conversation/     # Chat stream, message cards & branch forks
+│   │   ├── files/            # File explorer, tree view & diff viewers
+│   │   ├── terminal/         # Embedded Xterm.js terminal emulator
+│   │   └── settings/         # Agent profiles, MCP servers & connections
+│   ├── context/              # App-wide providers (Theme, Layout, Sound)
+│   ├── hooks/                # High-performance reactive state hooks
+│   ├── i18n/                 # Multi-language translation engine
+│   ├── routes/               # React Router layouts & navigation
+│   └── stores/               # Zustand & TanStack Query cache stores
+├── electron/                 # Electron main process & desktop integration
+├── docs/assets/              # High-resolution application screenshots
+└── tests/                    # Playwright E2E and Vitest test suites
+```
+
+---
+
+## ⌨️ Shortcuts & Hotkeys
+
+| Shortcut | Action |
+| :--- | :--- |
+| <kbd>⌘</kbd> + <kbd>K</kbd> / <kbd>Ctrl</kbd> + <kbd>K</kbd> | Open Command Palette / Model Switcher |
+| <kbd>⌘</kbd> + <kbd>P</kbd> / <kbd>Ctrl</kbd> + <kbd>P</kbd> | Quick File Search in Workspace |
+| <kbd>⌘</kbd> + <kbd>B</kbd> / <kbd>Ctrl</kbd> + <kbd>B</kbd> | Toggle Navigation Sidebar |
+| <kbd>⌘</kbd> + <kbd>`</kbd> / <kbd>Ctrl</kbd> + <kbd>`</kbd> | Focus Embedded Terminal |
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+```
+The MIT License (MIT)
+Copyright (c) 2026 Mohamed Arfeen <asmohamed.arfeen@gmail.com>
+```
+
+---
+
+<div align="center">
+  <p>Crafted with ❤️ by <strong>Mohamed Arfeen</strong></p>
+  <p>⭐ Star this repository if you find it helpful!</p>
+  <a href="#readme-top">⬆️ Back to Top</a>
+</div>
